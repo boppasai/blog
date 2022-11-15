@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/card.css" class="cs">
+    <link rel="stylesheet" href="../public/home.css" class="css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h4><a href="/">Blogs</a></h4>
+        </div>
+        <div class="auth">
+            <button><a href="/logout">Logout</a></button>
+            <button><a href="/addadmin">Add Admin</a></button>
+        </div>
+    </div>
+    <div class="addbtn">
+        <button><a href="/addblog">Add Blog</a></button>
+    </div>
+    <div class="blogpart">
+        <%data.forEach(data=>{%>
+        <div class="blogcard">
+            <h2><%=data.title%></h2>
+            <h2><%=data.category%></h2>
+            <p><%=data.define%></p>
+            <button><a href="/delete/<%=data._id%>">delete</a></button>
+            <button><a href="/updateblog/<%=data._id%>">update</a></button>
+        </div>
+        <%})%>
+    </div>
+    
+</body>
+
+</html>

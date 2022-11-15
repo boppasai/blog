@@ -1,0 +1,67 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34rem;
+
+}
+.bform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35rem;
+    min-height: 20rem;
+    /* background-color: aqua; */
+   
+    border-bottom: solid darkcyan 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.bform form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bform form textarea{
+    border: none;
+    min-height: 10rem;
+    min-width: 25rem;
+    max-width: 20rem;
+    max-height: 12rem;
+    border-bottom: solid darkcyan 0.1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.bform form input{
+    width: 25rem;
+    height: 3rem;
+    border-bottom: solid darkcyan 0.1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+    margin: 0.5rem;
+}
+.bform form button{
+    margin: 2rem;
+    width: 25rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+}
+.bform form button:hover{
+    background-color: rgb(231, 229, 229);
+}
+.bform h1{
+    margin: 2rem;
+    color: darkcyan;
+    font-size: 3rem;
+}

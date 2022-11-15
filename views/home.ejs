@@ -1,0 +1,23 @@
+<%- include('navbar.ejs') -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/card.css" class="cs">
+</head>
+<body>
+    <div class="blogpart">
+        <%blog.forEach(blog=>{%>
+        <div class="blogcard">
+            <h2><%=blog.title%></h2>
+            <h2><%=blog.category%></h2>
+            <p><%=blog.define%></p>
+            <button><a href="/detailblog/<%=blog._id%>">more</a></button>
+        </div>
+        <%})%>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.blogcard{
+    padding: 2rem;
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: darkcyan; */
+    border: solid darkcyan 0.5rem;
+    /* align-items: center; */
+    border-bottom-right-radius: 2rem;
+}
+.blogcard button{
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: darkcyan;
+}
+.blogcard button a{
+    color: white;
+    padding: 0.5rem;
+}
+.blogcard button:hover{
+    background-color: rgb(14, 156, 156);
+}
+.blogpart{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:2rem;
+}

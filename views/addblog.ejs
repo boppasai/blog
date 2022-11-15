@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/addblog.css" class="css">
+    <link rel="stylesheet" href="../public//home.css">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h4><a href="/">Blogs</a></h4>
+        </div>
+        <div class="auth">
+            <button><a href="/logout">Logout</a></button>
+            <button><a href="/admin">Back</a></button>
+        </div>
+    </div>
+
+    <div class="final">
+        <div class="blogform">
+            <div class="bform">
+                <h1>Add Blog</h1>
+                <form action="/addblog" method="post">
+                    <input type="text" placeholder="enter title" name="btitle">
+                    <input type="text" placeholder="enter category" name="bcategory">
+                    <input type="text" placeholder="define shortly" name="bdefine">
+                    <textarea name="bdescription" id="" cols="30" rows="10" maxrows="15" maxcols="40" placeholder="description"></textarea>
+                    <button>Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

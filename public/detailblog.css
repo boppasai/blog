@@ -1,0 +1,24 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.detailblog{
+    width: 30rem;
+    min-height: 35rem;
+    margin-top: 2rem;
+    border-bottom: solid darkcyan 1rem;
+    border-radius: 2rem;
+    padding-bottom: 1rem;
+}
+.detailblog h1, h2, p {
+    margin-top: 1rem;
+}
